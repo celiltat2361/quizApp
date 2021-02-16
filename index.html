@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Celil Tat</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section>
+      <div class="home-box custom-box">
+        <h1>FED-20 Quiz App</h1>
+        <p>Total Number of questions:<span class="total-question">15</span></p>
+        <button type="button" class="btn" id="startButton">Start Quiz</button>
+      </div>
+    </section>
+    <section>
+      <div class="quiz-box custom-box hide">
+        <div class="question-number">Question 1 of 15</div>
+        <div class="answers-indicators"></div>
+
+        <p>Who is He or She</p>
+
+        <div class="question-area box1">
+          <div class="question-img">
+            <img src="" id="images" />
+          </div>
+
+          <div class="option-container box1 option"></div>
+        </div>
+        <div class="buttons">
+          <div class="next-question-btn right">
+            <button type="button" class="btn" onclick="next()">Next</button>
+          </div>
+          <div class="next-question-btn">
+            <button type="button" class="btn" onclick="quizOver()">
+              Result
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="result-box custom-box hide">
+        <h1>Quiz Result</h1>
+        <table class="table">
+          <tr>
+            <td>Total Question</td>
+            <td><span class="total-question">15</span></td>
+          </tr>
+          <tr>
+            <td>Attempt</td>
+            <td><span class="total-attempt"></span></td>
+          </tr>
+          <tr>
+            <td>Correct</td>
+            <td><span class="total-correct"></span></td>
+          </tr>
+          <tr>
+            <td>Wrong</td>
+            <td><span class="total-wrong"></span></td>
+          </tr>
+          <tr>
+            <td style="background-color: indianred;" >Just Now!!</td>
+            <td><span class="percentage"></span></td>
+          </tr>
+          <tr>
+            <td>Result</td>
+            <td><span class="total-score"></span></td>
+          </tr>
+          <tr>
+            <td style="background-color: greenyellow;">!!!Best %</td>
+            <td><span class="high-score"></span></td>
+          </tr>
+        </table>
+
+       
+        <div class="btn-result">
+          <button type="button" class="btn" onclick="tryAgain()">
+            Try Again
+          </button>
+          <button type="button" class="btn" onclick="goToHome()">Home</button>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
